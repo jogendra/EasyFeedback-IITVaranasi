@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "EasyFeedback",
+  "version": "1.0",
+  "description": "Easily fill feedback form for IIT BHU Varanasi",
+  "permissions": ["activeTab", "contextMenus"],
+  "icons": 
+        {
+        "48": "flogo.png"
+        },
+  "content_scripts": 
+        [
+            {
+            "matches": ["*://*.iitbhuacademics.com/*"],
+            "js": ["feedback.js"]
+            }
+        ]
+}
